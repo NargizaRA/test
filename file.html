@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Liubov Mukash | Business Coach für Führung & Klarheit</title>
+  <meta name="description" content="Liubov Mukash – Business Coach für Führungskräfte & Professionals. Klarheit, Wirkung und Balance durch Coaching.">
+  <meta name="keywords" content="Business Coach, Führungskräfte, Karriere, Leadership, Coaching, Klarheit, Resilienz">
+  <meta name="author" content="Liubov Mukash">
+  <link rel="canonical" href="[liubovmukash.de](https://www.liubovmukash.de/)">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- Cookie Banner -->
+  <div id="cookie-banner">
+    Diese Website verwendet Cookies, um Ihre Nutzung zu verbessern.
+    <a href="datenschutz.html">Mehr erfahren</a>
+    <button id="accept-cookies">OK</button>
+  </div>
+
+  <script>
+    if (!localStorage.getItem('cookiesAccepted')) {
+      document.getElementById('cookie-banner').style.display = 'block';
+    }
+    document.getElementById('accept-cookies').onclick = function() {
+      localStorage.setItem('cookiesAccepted', 'true');
+      document.getElementById('cookie-banner').style.display = 'none';
+    };
+  </script>
+
+  <!-- NAVIGATION -->
+  <nav class="navbar">
+    <div class="logo">Liubov Mukash</div>
+    <div class="menu-toggle" id="mobile-menu">☰</div>
+    <ul class="nav-links">
+      <li><a href="#about">Über mich</a></li>
+      <li><a href="#services">Angebot</a></li>
+      <li><a href="#contact">Kontakt</a></li>
+      <li><a href="[calendly.com](https://calendly.com/liubovmukash/erstgespraech)" class="cta-small">Termin buchen</a></li>
+    </ul>
+  </nav>
+
+  <script>
+    const menu = document.querySelector('#mobile-menu');
+    const navLinks = document.querySelector('.nav-links');
+    menu.addEventListener('click', () => navLinks.classList.toggle('active'));
+  </script>
+
+  <!-- HERO -->
+  <header class="hero">
+    <div class="hero-content">
+      <img src="images/liubov.jpg" alt="Liubov Mukash Portrait" class="portrait">
+      <h1>Liubov Mukash</h1>
+      <p class="tagline">Business Coach für Führung & Entwicklung</p>
+      <p>Führung neu denken. Entscheidungen klar treffen. Wirkung entfalten.</p>
+      <a href="[calendly.com](https://calendly.com/liubovmukash/erstgespraech)" class="cta-btn">🗓 Termin buchen</a>
+    </div>
+  </header>
+
+  <!-- ABOUT -->
+  <section id="about">
+    <h2>Über mich</h2>
+    <p>Ich begleite Menschen, die Verantwortung tragen – für Teams, Projekte und sich selbst.
+       Gemeinsam schaffen wir Raum für Klarheit, Entwicklung und nachhaltige Veränderung.</p>
+    <p>Meine Arbeit verbindet strategisches Denken mit Empathie und Achtsamkeit.
+       Coaching mit mir bedeutet: Fokus, Mut und konkrete Schritte nach vorn.</p>
+  </section>
+
+  <!-- SERVICES -->
+  <section id="services">
+    <h2>Coaching-Schwerpunkte</h2>
+    <div class="cards">
+      <div class="card">
+        <h3>Führung & Leadership</h3>
+        <p>Entwickeln Sie Ihren eigenen Führungsstil und stärken Sie Ihre Wirkung im Team.</p>
+      </div>
+      <div class="card">
+        <h3>Klarheit & Entwicklung</h3>
+        <p>Treffen Sie Entscheidungen, die zu Ihren Werten und Zielen passen – mit innerer Sicherheit.</p>
+      </div>
+      <div class="card">
+        <h3>Balance & Energie</h3>
+        <p>Bleiben Sie fokussiert und resilient – auch in herausfordernden Phasen.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- QUOTE -->
+  <section id="quote">
+    <blockquote>„Wachstum beginnt dort, wo wir bereit sind, unsere Perspektive zu verändern.“</blockquote>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact">
+    <h2>Kontakt</h2>
+    <p>Möchten Sie mehr erfahren oder ein unverbindliches Kennenlern‑Gespräch vereinbaren?</p>
+    <p><strong>E-Mail:</strong> <a href="mailto:kontakt@liubovmukash.de">kontakt@liubovmukash.de</a><br>
+       <strong>Telefon:</strong> +49 XXX XXX XXXX</p>
+    <a href="[calendly.com](https://calendly.com/liubovmukash/erstgespraech)" class="cta-btn">🗓 Jetzt Termin vereinbaren</a>
+  </section>
+
+  <footer>
+    <p>© 2024 Liubov Mukash | <a href="impressum.html">Impressum</a> | <a href="datenschutz.html">Datenschutz</a></p>
+  </footer>
+</body>
+</html>
